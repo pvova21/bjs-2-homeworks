@@ -7,10 +7,10 @@ function getArrayParams(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] < min) {
       min = arr[i];
-      }
+    }
     if (arr[i] > max) {
       max = arr[i];
-      }
+    }
   sum += arr[i];
   }
   avg = parseFloat((sum / arr.length).toFixed(2));
@@ -38,10 +38,10 @@ function worker2(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > max) {
       max = arr[i];
-      }
+    }
     if (arr[i] < min) {
       min = arr[i];
-      }
+    }
   }
   return Math.abs(max - min);
 }
